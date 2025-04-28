@@ -14,112 +14,157 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <img src="/assets/images/logo.svg" alt="logo">
-    <input type="image" src="/assets/images/icon-sun.svg" alt="day">
-  </header>
+    <header class="header">
+      <img src="/assets/images/logo.svg" alt="logo">
+      <input type="image" src="/assets/images/icon-sun.svg" alt="day">
+    </header>
 
-  <section>
-    <p class="titulo1">Extensions List</p>
-    <nav class="bar">
-      <input type="button" value="All">
-      <input type="button" value="Active">
-      <input type="button" value="Inactive">
-    </nav>
-  </section>
+    <section>
+      <p class="titulo1">Extensions List</p>
+      <nav class="bar">
+        <input type="button" value="All">
+        <input type="button" value="Active">
+        <input type="button" value="Inactive">
+      </nav>
+    </section>
 
-  <main>
-    <div class="box">
-       <img src="/assets/images/logo-devlens.svg" alt="#">
-       <div>
-        <h2>DevLens</h2>
-        <p>Quickly inspect page layouts and visualize element boundaries.</p>
-        <input type="button" value="Remove" onclick=""> <input type="checkbox" name="ativo" id="atv">
-       </div>
-    </div>
-
-    <div class="box"> 
-      <img src="/assets/images/logo-style-spy.svg" alt="#">
-      <div>
-        <h2>StyleSpy</h2>
-        <p>Instantly analyze and copy CSS from any webpage element.</p>
-        <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
+    <main>
+      <div class="box">
+        <div><img src="/assets/images/logo-devlens.svg" alt="#"></div>
+        <div class="texto">
+          <h2>DevLens</h2>
+          <p>Quickly inspect page layouts and visualize element boundaries.</p>
+        </div>
+          <div>
+            <input type="button" value="Remove" class="botao1" onclick=""> <input type="checkbox" name="ativo" class="botao2" id="atv"> <!-- arrumar os botoes no CSS -->
+          </div>        
       </div>
-    </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-speed-boost.svg" alt="#">
-      <h2>SpeedBoost</h2>
-      <p>Optimizes browser resource usage to accelerate page loading.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="inv">
-    </div>
+      <div class="box"> 
+        <img src="/assets/images/logo-style-spy.svg" alt="#">
+        <div class="texto">
+          <h2>StyleSpy</h2>
+          <p>Instantly analyze and copy CSS from any webpage element.</p>
+        </div>
+          <div>
+            <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv">
+          </div>        
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-json-wizard.svg" alt="#">
-      <h2>JSONWizard</h2>
-      <p>Formats, validates, and prettifies JSON responses in-browser.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-speed-boost.svg" alt="#">
+      <div class="texto">
+        <h2>SpeedBoost</h2>
+        <p>Optimizes browser resource usage to accelerate page loading.</p>
+      </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="inv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-tab-master-pro.svg" alt="#">
-      <h2>TabMaster Pro</h2>
-      <p>Organizes browser tabs into groups and sessions.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-json-wizard.svg" alt="#">
+        <div class="texto">
+          <h2>JSONWizard</h2>
+          <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-viewport-buddy.svg" alt="#">
-      <h2>ViewportBuddy</h2>
-      <p>Simulates various screen resolutions directly within the browser.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="inv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-tab-master-pro.svg" alt="#">
+        <div class="texto">
+          <h2>TabMaster Pro</h2>
+          <p>Organizes browser tabs into groups and sessions.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-markup-notes.svg" alt="#">
-      <h2>Markup Notes</h2>
-      <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-viewport-buddy.svg" alt="#">
+        <div class="texto">
+          <h2>ViewportBuddy</h2>
+          <p>Simulates various screen resolutions directly within the browser.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="inv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-grid-guides.svg" alt="#">
-      <h2>GridGuides</h2>
-      <p>Overlay customizable grids and alignment guides on any webpage.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="inv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-markup-notes.svg" alt="#">
+        <div class="texto">
+          <h2>Markup Notes</h2>
+          <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv"> 
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-palette-picker.svg" alt="#">
-      <h2>Palette Picker</h2>
-      <p>Instantly extracts color palettes from any webpage.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-grid-guides.svg" alt="#">
+        <div class="texto">
+          <h2>GridGuides</h2>
+          <p>Overlay customizable grids and alignment guides on any webpage.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="inv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-link-checker.svg" alt="#">
-      <h2>LinkChecker</h2>
-      <p>Scans and highlights broken links on any page.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-palette-picker.svg" alt="#">
+        <div class="texto">
+          <h2>Palette Picker</h2>
+          <p>Instantly extracts color palettes from any webpage.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-dom-snapshot.svg" alt="#">
-      <h2>DOM Snapshot</h2>
-      <p>Capture and export DOM structures quickly.</p>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="inv">
-    </div>
+      <div class="box">
+        <img src="/assets/images/logo-link-checker.svg" alt="#">
+        <div class="texto">
+          <h2>LinkChecker</h2>
+          <p>Scans and highlights broken links on any page.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao3"> <input type="checkbox" name="ativo" class="botao4" id="atv">
+        </div>
+      </div>
 
-    <div class="box">
-      <img src="/assets/images/logo-console-plus.svg" alt="#">
-      <h2>Enhanced developer console with advanced filtering and logging.</h2>
-      <input type="button" value="Remove"> <input type="checkbox" name="ativo" id="atv">
-    </div>
-  </main>
+      <div class="box">
+        <img src="/assets/images/logo-dom-snapshot.svg" alt="#">
+        <div class="texto">
+          <h2>DOM Snapshot</h2>
+          <p>Capture and export DOM structures quickly.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao3"> <input type="checkbox" name="ativo" class="botao4" id="inv">
+        </div>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="box">
+        <img src="/assets/images/logo-console-plus.svg" alt="#">
+        <div class="texto">
+          <h2>ConsolePlus</h2>
+          <p>Enhanced developer console with advanced filtering and logging.</p>
+        </div>
+        <div>
+          <input type="button" value="Remove" class="botao1"> <input type="checkbox" name="ativo" class="botao2" id="atv">
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
 </body>
 </html>
