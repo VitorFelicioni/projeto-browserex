@@ -24,20 +24,20 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100vh;
-}
-
 body {
     /* background: var(--dark-gradient); */
     background-color: rgb(61, 143, 115);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    
+    width: 70%;
     margin: 0;
     margin-left: 30px;
     margin-right: 30px;
@@ -62,11 +62,12 @@ section {
     align-items: center; 
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
     padding: 15px 3%;
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 35px;
-
-    border: 2px solid black;
 }
 
 .titulo1 {
@@ -81,6 +82,7 @@ section {
     color: white;
     background-color: gray;
     margin-left: 5px;
+    margin-top: 5px;
     padding: 10px;
     border-radius: 15px;
     text-decoration: none;
@@ -101,6 +103,7 @@ main {
 
 .box {
     width: 350px;
+    height: 190px;
     padding: 10px;
 
     border: 2px solid black;
@@ -112,6 +115,21 @@ main {
     width: 60px;
     padding: 5px;
     
+}
+
+.box input {    
+    padding: 5px;
+    /* margin-top: 25px; */
+
+    border: 2px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.botao1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
 }
 
 .texto h2 {
@@ -134,7 +152,7 @@ main {
     border: 2px solid black;
 }
 
-input.botao1 {
+/* input.botao1 {
     padding: 5px;
     margin-top: 25px;
     
@@ -163,4 +181,4 @@ input.botao4 {
     float: right;
     padding: 5px;
     margin-top: 53px;
-}
+} */
