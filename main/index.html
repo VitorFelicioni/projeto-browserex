@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <title>Frontend Mentor | Browser extensions manager UI</title>
 
@@ -13,10 +14,10 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body> 
+<body id="bd"> 
     <header class="header">
       <img src="/assets/images/logo.svg" alt="logo">
-      <input type="image" src="/assets/images/icon-sun.svg" alt="day">
+      <i id="mode_icon" class="fa-solid fa-sun" class="fa-solid fa-moon"></i>
     </header>
 
     <section>
@@ -27,7 +28,7 @@
         <input type="button" value="Inactive">
       </nav>
     </section>
-
+    
     <main>
       <div class="box">
         <div><img src="/assets/images/logo-devlens.svg" alt="#"></div>
@@ -215,6 +216,6 @@
       Coded by <a href="https://github.com/VitorFelicioni">Vitor Felicioni</a>.
     </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
