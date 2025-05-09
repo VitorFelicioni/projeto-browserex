@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 header {
@@ -68,10 +68,10 @@ header {
 
 section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* justify content space between no modo desktop */
+    align-items: center;  
     flex-direction: row;
-    background-color: transparent;
+    flex-wrap: wrap;
     width: 70%;
     padding: 15px 3%;
     margin-left: 30px;
