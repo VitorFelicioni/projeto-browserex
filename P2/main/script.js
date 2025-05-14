@@ -17,6 +17,9 @@ mode.addEventListener('click', () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btnAll").addEventListener("click", mostrarTodos);
+  document.getElementById("btnActive").addEventListener("click", mostrarAtivos);
+  document.getElementById("btnInactive").addEventListener("click", mostrarInativos);
   const caixas = document.querySelectorAll(".box");
 
   function mudarForma() {
@@ -46,10 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       box.classList.toggle("hidden", status !== "inativo");
     });
   }
-
-  document.getElementById("btnAll").addEventListener("click", mostrarTodos);
-  document.getElementById("btnActive").addEventListener("click", mostrarAtivos);
-  document.getElementById("btnInactive").addEventListener("click", mostrarInativos);
 
   document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
   cb.addEventListener("change", mudarForma);
