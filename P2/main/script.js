@@ -15,11 +15,12 @@ mode.addEventListener('click', () => {
     form.classList.remove('light');
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".box");
 
-  function atualizarStatus() {
-    boxes.forEach(box => {
+document.addEventListener("DOMContentLoaded", () => {
+  const caixas = document.querySelectorAll(".box");
+
+  function mudarForma() {
+    caixas.forEach(box => {
       const checkbox = box.querySelector('input[type="checkbox"]');
       const status = checkbox.checked ? "ativo" : "inativo";
       box.setAttribute("data-status", status);
@@ -27,20 +28,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function mostrarTodos() {
-    boxes.forEach(box => box.classList.remove("hidden"));
+    caixas.forEach(box => box.classList.remove("hidden"));
   }
 
   function mostrarAtivos() {
-    atualizarStatus();
-    boxes.forEach(box => {
+    mudarForma();
+    caixas.forEach(box => {
       const status = box.getAttribute("data-status");
       box.classList.toggle("hidden", status !== "ativo");
     });
   }
 
   function mostrarInativos() {
-    atualizarStatus();
-    boxes.forEach(box => {
+    mudarForma();
+    caixas.forEach(box => {
       const status = box.getAttribute("data-status");
       box.classList.toggle("hidden", status !== "inativo");
     });
@@ -51,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnInactive").addEventListener("click", mostrarInativos);
 
   document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-  cb.addEventListener("change", atualizarStatus);
+  cb.addEventListener("change", mudarForma);
   });
 
-  atualizarStatus();
+  mudarForma();
 });
