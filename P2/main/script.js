@@ -14,3 +14,45 @@ mode.addEventListener('click', () => {
     mode.classList.remove('fa-moon');
     form.classList.remove('light');
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const boxes = document.querySelectorAll(".box");
+
+  function atualizarStatus() {
+    boxes.forEach(box => {
+      const checkbox = box.querySelector('input[type="checkbox"]');
+      const status = checkbox.checked ? "ativo" : "inativo";
+      box.setAttribute("data-status", status);
+    });
+  }
+
+  function mostrarTodos() {
+    boxes.forEach(box => box.classList.remove("hidden"));
+  }
+
+  function mostrarAtivos() {
+    atualizarStatus();
+    boxes.forEach(box => {
+      const status = box.getAttribute("data-status");
+      box.classList.toggle("hidden", status !== "ativo");
+    });
+  }
+
+  function mostrarInativos() {
+    atualizarStatus();
+    boxes.forEach(box => {
+      const status = box.getAttribute("data-status");
+      box.classList.toggle("hidden", status !== "inativo");
+    });
+  }
+
+  document.getElementById("btnAll").addEventListener("click", mostrarTodos);
+  document.getElementById("btnActive").addEventListener("click", mostrarAtivos);
+  document.getElementById("btnInactive").addEventListener("click", mostrarInativos);
+
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+  cb.addEventListener("change", atualizarStatus);
+  });
+
+  atualizarStatus();
+});

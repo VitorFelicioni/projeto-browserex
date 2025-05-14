@@ -293,3 +293,7 @@ input:checked + .sliderround:before {
     background-color: var(--red-400);
     color: white;
 }
+
+.hidden {
+  display: none !important;
+}
