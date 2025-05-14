@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnInactive").addEventListener("click", mostrarInativos);
   const caixas = document.querySelectorAll(".box");
 
-  function mudarForma() {
+  function mudarForma() { 
     caixas.forEach(box => {
       const checkbox = box.querySelector('input[type="checkbox"]');
       const status = checkbox.checked ? "ativo" : "inativo";
