@@ -29,13 +29,12 @@
 
 body {
     background: var(--dark-gradient);
-    background-color: rgb(61, 143, 115);
     color: white;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
@@ -296,4 +295,8 @@ input:checked + .sliderround:before {
 
 .hidden {
   display: none !important;
+}
+
+.attribution {
+    margin-top: 15px;
 }
